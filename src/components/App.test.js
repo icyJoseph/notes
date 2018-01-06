@@ -5,6 +5,9 @@ import App from "./App";
 
 describe("App", () => {
   let app = shallow(<App />);
+  let initialAppState = { text: "", notes: [], key: "MYNOTES:COOKIE:KEY" };
+  let note = "Testing FormControl input";
+
   it("renders correctly", () => {
     expect(app).toMatchSnapshot();
   });
@@ -43,15 +46,12 @@ describe("App", () => {
   });
 
   describe("App state", () => {
-    let initialAppState = { text: "", notes: [], key: "MYNOTES:COOKIE:KEY" };
-    let note = "Testing FormControl input";
-
     it("has a state object", () => {
       expect(app.state()).toEqual(initialAppState);
     });
 
     describe("input is controlled", () => {
-      beforeEach(() => {
+      beforeAll(() => {
         app.find("FormControl").simulate("change", { target: { value: note } });
       });
 
@@ -73,6 +73,13 @@ describe("App", () => {
         it("adds note to `state.notes`", () => {
           expect(app.state().notes).toEqual([note]);
         });
+      });
+
+      describe("and saves notes to cookies", () => {
+        it("readCookie method returns the note", () => {
+          expect(app.instance().readCookie()).toEqual([note]);
+        });
+      });
 
       describe("and app renders a list of notes", () => {
         it("contains a list", () => {
