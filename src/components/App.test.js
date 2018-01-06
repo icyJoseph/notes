@@ -54,6 +54,16 @@ describe("App", () => {
           app.state().text
         );
       });
+
+      describe("and the Submit button updates state", () => {
+        beforeEach(() => {
+          app.find("Button").simulate("click");
+        });
+
+        it("adds note to `state.notes`", () => {
+          expect(app.state().notes).toEqual([note]);
+        });
+      });
     });
   });
 });
