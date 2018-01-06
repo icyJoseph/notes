@@ -11,11 +11,14 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.setState({ notes: read_cookie(this.state.key) });
+    this.setState({ notes: this.readCookie(this.state.key) });
   }
 
-  saveCookie = cookie => {
-    bake_cookie(this.state.key, cookie);
+  componentDidUpdate() {
+    this.saveCookie();
+  }
+  saveCookie = () => {
+    bake_cookie(this.state.key, this.state.notes);
   };
 
   readCookie = () => {
@@ -27,7 +30,6 @@ class App extends Component {
       text: "",
       notes: [...prevState.notes, prevState.text]
     }));
-    this.saveCookie(this.state.notes);
   };
 
   render() {
