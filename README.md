@@ -1,4 +1,4 @@
-# Bank Balance & Bitcoin Calculator
+# Notes
 
 [![Build Status](https://travis-ci.org/icyJoseph/notes.svg?branch=master)](https://travis-ci.org/icyJoseph/notes)
 
