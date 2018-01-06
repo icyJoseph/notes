@@ -12,3 +12,11 @@ Button {
   padding: 5%;
   margin: 10px;
 }
+
+.note {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-style: italic;
+  text-align: left;
+  padding: 8px;
+}
