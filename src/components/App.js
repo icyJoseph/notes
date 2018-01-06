@@ -15,6 +15,7 @@ class App extends Component {
   };
 
   render() {
+    const { notes } = this.state;
     return (
       <div>
         <h2 className="title">My Notes</h2>
@@ -26,7 +27,7 @@ class App extends Component {
           <Button onClick={() => this.submit()}>Submit</Button>
         </Form>
         <ul className="notes-list">
-          {this.state.notes.map((note, i) => (
+          {notes.map((note, i) => (
             <li key={i} className="note">
               {note}
             </li>
