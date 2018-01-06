@@ -6,3 +6,9 @@ body {
 Button {
   margin: 10px;
 }
+
+.notes-list {
+  list-style: none;
+  padding: 5%;
+  margin: 10px;
+}
