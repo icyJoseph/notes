@@ -10,4 +10,8 @@ describe("Note", () => {
   it("renders properly", () => {
     expect(note).toMatchSnapshot();
   });
+
+  it("displays the received props", () => {
+    expect(note.find(".note").text()).toEqual(props.note);
+  });
 });
