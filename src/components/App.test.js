@@ -16,6 +16,16 @@ describe("App", () => {
 
   it("renders a bootstrap Form", () => {
     expect(app.find("Form").exists()).toBe(true);
+
+    describe("Form does not act on default", () => {
+      const preventDefaultFunction = "e => e.preventDefault()";
+      expect(
+        app
+          .find("Form")
+          .get(0)
+          .props.onSubmit.toString()
+      ).toEqual(preventDefaultFunction);
+    });
   });
 
   it("renders a bootstrap FormControl", () => {
