@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Form, Button, FormControl } from "react-bootstrap";
 
 class App extends Component {
+  state = { text: "" };
   render() {
     return (
       <div>
