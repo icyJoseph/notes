@@ -19,4 +19,5 @@ Button {
   font-style: italic;
   text-align: left;
   padding: 8px;
+  margin: 10px;
 }
