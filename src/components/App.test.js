@@ -47,6 +47,12 @@ describe("App", () => {
       it("updates state with input", () => {
         expect(app.state().text).toEqual(note);
       });
+
+      it("shows `state.text` as its value", () => {
+        expect(app.find("FormControl").get(0).props.value).toEqual(
+          app.state().text
+        );
+      });
     });
   });
 });
