@@ -33,13 +33,14 @@ describe("App", () => {
   });
 
   describe("App state", () => {
-    let initialAppState = { text: "" };
+    let initialAppState = { text: "", notes: [] };
+    let note = "Testing FormControl input";
+
     it("has a state object", () => {
       expect(app.state()).toEqual(initialAppState);
     });
 
     describe("input is controlled", () => {
-      let note = "Testing FormControl input";
       beforeEach(() => {
         app.find("FormControl").simulate("change", { target: { value: note } });
       });
