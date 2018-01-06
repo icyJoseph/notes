@@ -1,11 +1,25 @@
 import React, { Component } from "react";
 import { Form, Button, FormControl } from "react-bootstrap";
 import Note from "./Note";
+import { bake_cookie, read_cookie } from "sfcookies";
 
 class App extends Component {
   state = {
     text: "",
-    notes: []
+    notes: [],
+    key: "MYNOTES:COOKIE:KEY"
+  };
+
+  componentDidMount() {
+    this.setState({ notes: read_cookie(this.state.key) });
+  }
+
+  saveCookie = cookie => {
+    bake_cookie(this.state.key, cookie);
+  };
+
+  readCookie = () => {
+    return read_cookie(this.state.key);
   };
 
   submit = () => {
@@ -13,6 +27,7 @@ class App extends Component {
       text: "",
       notes: [...prevState.notes, prevState.text]
     }));
+    this.saveCookie(this.state.notes);
   };
 
   render() {
