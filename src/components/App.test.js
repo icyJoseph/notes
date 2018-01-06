@@ -80,8 +80,8 @@ describe("App", () => {
           expect(app.find(".notes-list").exists()).toBe(true);
         });
 
-        it("contains the added note in the list", () => {
-          expect(app.find(".note").exists()).toBe(true);
+        it("contains the adds a Note in the list", () => {
+          expect(app.find("Note").exists()).toBe(true);
         });
       });
     });
