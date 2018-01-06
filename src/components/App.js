@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <div>
         <h2 className="title">My Notes</h2>
-        <Form onSubmit={e => e.preventDefault()}>
+        <Form inline onSubmit={e => e.preventDefault()}>
           <FormControl
             value={this.state.text}
             onChange={e => this.setState({ text: e.target.value })}

@@ -27,7 +27,7 @@ ShallowWrapper {
           bsClass="form"
           componentClass="form"
           horizontal={false}
-          inline={false}
+          inline={true}
           onSubmit={[Function]}
 >
           <FormControl
@@ -107,7 +107,7 @@ ShallowWrapper {
           ],
           "componentClass": "form",
           "horizontal": false,
-          "inline": false,
+          "inline": true,
           "onSubmit": [Function],
         },
         "ref": null,
@@ -196,7 +196,7 @@ ShallowWrapper {
             bsClass="form"
             componentClass="form"
             horizontal={false}
-            inline={false}
+            inline={true}
             onSubmit={[Function]}
 >
             <FormControl
@@ -276,7 +276,7 @@ ShallowWrapper {
             ],
             "componentClass": "form",
             "horizontal": false,
-            "inline": false,
+            "inline": true,
             "onSubmit": [Function],
           },
           "ref": null,
