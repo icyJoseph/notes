@@ -41,6 +41,7 @@ ShallowWrapper {
                     bsClass="btn"
                     bsStyle="default"
                     disabled={false}
+                    onClick={[Function]}
           >
                     Submit
           </Button>
@@ -80,6 +81,7 @@ ShallowWrapper {
               bsClass="btn"
               bsStyle="default"
               disabled={false}
+              onClick={[Function]}
 >
               Submit
 </Button>,
@@ -115,6 +117,7 @@ ShallowWrapper {
               "bsStyle": "default",
               "children": "Submit",
               "disabled": false,
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Submit",
@@ -156,6 +159,7 @@ ShallowWrapper {
                         bsClass="btn"
                         bsStyle="default"
                         disabled={false}
+                        onClick={[Function]}
             >
                         Submit
             </Button>
@@ -195,6 +199,7 @@ ShallowWrapper {
                 bsClass="btn"
                 bsStyle="default"
                 disabled={false}
+                onClick={[Function]}
 >
                 Submit
 </Button>,
@@ -230,6 +235,7 @@ ShallowWrapper {
                 "bsStyle": "default",
                 "children": "Submit",
                 "disabled": false,
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Submit",

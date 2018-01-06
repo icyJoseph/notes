@@ -7,6 +7,13 @@ class App extends Component {
     notes: []
   };
 
+  submit = () => {
+    this.setState(prevState => ({
+      text: "",
+      notes: [...prevState.notes, prevState.text]
+    }));
+  };
+
   render() {
     return (
       <div>
@@ -16,7 +23,7 @@ class App extends Component {
             value={this.state.text}
             onChange={e => this.setState({ text: e.target.value })}
           />
-          <Button>Submit</Button>
+          <Button onClick={() => this.submit()}>Submit</Button>
         </Form>
       </div>
     );
