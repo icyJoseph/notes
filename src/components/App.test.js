@@ -36,10 +36,10 @@ describe("App", () => {
   });
 
   it("renders a bootstrap Button with `Submit` text", () => {
-    expect(app.find("Button").exists()).toBe(true);
+    expect(app.find(".submit-button").exists()).toBe(true);
     expect(
       app
-        .find("Button")
+        .find(".submit-button")
         .render()
         .text()
     ).toEqual("Submit");
@@ -67,7 +67,7 @@ describe("App", () => {
 
       describe("and the Submit button updates state", () => {
         beforeEach(() => {
-          app.find("Button").simulate("click");
+          app.find(".submit-button").simulate("click");
         });
 
         it("adds note to `state.notes`", () => {
@@ -111,9 +111,22 @@ describe("App", () => {
     expect(app.find(".clear-notes").exists()).toBe(true);
     expect(
       app
-        .find(".clear-note")
+        .find(".clear-notes")
         .render()
         .text()
     ).toEqual("Clear Notes");
+  });
+
+  describe("when clicking Clear Notes", () => {
+    beforeAll(() => {
+      app.find(".clear-notes").simulate("click");
+    });
+    const noCookies = app.instance().readCookie();
+    it("Deletes cookies", () => {
+      expect(noCookies).toEqual([]);
+    });
+    it("Removes all notes from view", () => {
+      expect(app.state().notes).toEqual([]);
+    });
   });
 });
