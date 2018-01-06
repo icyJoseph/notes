@@ -64,6 +64,16 @@ describe("App", () => {
           expect(app.state().notes).toEqual([note]);
         });
       });
+
+      describe("and app renders a list of notes", () => {
+        it("contains a list", () => {
+          expect(app.find(".notes-list").exists()).toBe(true);
+        });
+
+        it("contains the added note in the list", () => {
+          expect(app.find(".note").exists()).toBe(true);
+        });
+      });
     });
   });
 });
