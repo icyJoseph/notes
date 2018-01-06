@@ -31,4 +31,11 @@ describe("App", () => {
         .text()
     ).toEqual("Submit");
   });
+
+  describe("App state", () => {
+    let initialAppState = { text: "" };
+    it("has a state object", () => {
+      expect(app.state()).toEqual(initialAppState);
+    });
+  });
 });
