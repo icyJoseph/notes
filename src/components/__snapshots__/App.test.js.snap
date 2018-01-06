@@ -60,6 +60,7 @@ ShallowWrapper {
           bsStyle="default"
           className="clear-notes"
           disabled={false}
+          onClick={[Function]}
 >
           Clear Notes
 </Button>,
@@ -170,6 +171,7 @@ ShallowWrapper {
           "children": "Clear Notes",
           "className": "clear-notes",
           "disabled": false,
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Clear Notes",
@@ -227,6 +229,7 @@ ShallowWrapper {
             bsStyle="default"
             className="clear-notes"
             disabled={false}
+            onClick={[Function]}
 >
             Clear Notes
 </Button>,
@@ -337,6 +340,7 @@ ShallowWrapper {
             "children": "Clear Notes",
             "className": "clear-notes",
             "disabled": false,
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Clear Notes",

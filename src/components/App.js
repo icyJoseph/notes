@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button, FormControl } from "react-bootstrap";
 import Note from "./Note";
-import { bake_cookie, read_cookie } from "sfcookies";
+import { bake_cookie, read_cookie, delete_cookie } from "sfcookies";
 
 class App extends Component {
   state = {
@@ -32,6 +32,11 @@ class App extends Component {
     }));
   };
 
+  clearAll = () => {
+    this.setState({ notes: [] });
+    delete_cookie(this.state.key);
+  };
+
   render() {
     const { notes } = this.state;
     return (
@@ -51,7 +56,9 @@ class App extends Component {
             <Note key={i} className="note" note={note} />
           ))}
         </ul>
-        <Button className="clear-notes">Clear Notes</Button>
+        <Button className="clear-notes" onClick={() => this.clearAll()}>
+          Clear Notes
+        </Button>
       </div>
     );
   }
