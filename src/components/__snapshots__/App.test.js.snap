@@ -41,6 +41,7 @@ ShallowWrapper {
                     block={false}
                     bsClass="btn"
                     bsStyle="default"
+                    className="submit-button"
                     disabled={false}
                     onClick={[Function]}
           >
@@ -52,6 +53,16 @@ ShallowWrapper {
 >
           
 </ul>,
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsStyle="default"
+          className="clear-notes"
+          disabled={false}
+>
+          Clear Notes
+</Button>,
       ],
     },
     "ref": null,
@@ -86,6 +97,7 @@ ShallowWrapper {
               block={false}
               bsClass="btn"
               bsStyle="default"
+              className="submit-button"
               disabled={false}
               onClick={[Function]}
 >
@@ -123,6 +135,7 @@ ShallowWrapper {
               "bsClass": "btn",
               "bsStyle": "default",
               "children": "Submit",
+              "className": "submit-button",
               "disabled": false,
               "onClick": [Function],
             },
@@ -144,6 +157,23 @@ ShallowWrapper {
         "ref": null,
         "rendered": Array [],
         "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "active": false,
+          "block": false,
+          "bsClass": "btn",
+          "bsStyle": "default",
+          "children": "Clear Notes",
+          "className": "clear-notes",
+          "disabled": false,
+        },
+        "ref": null,
+        "rendered": "Clear Notes",
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -178,6 +208,7 @@ ShallowWrapper {
                         block={false}
                         bsClass="btn"
                         bsStyle="default"
+                        className="submit-button"
                         disabled={false}
                         onClick={[Function]}
             >
@@ -189,6 +220,16 @@ ShallowWrapper {
 >
             
 </ul>,
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            className="clear-notes"
+            disabled={false}
+>
+            Clear Notes
+</Button>,
         ],
       },
       "ref": null,
@@ -223,6 +264,7 @@ ShallowWrapper {
                 block={false}
                 bsClass="btn"
                 bsStyle="default"
+                className="submit-button"
                 disabled={false}
                 onClick={[Function]}
 >
@@ -260,6 +302,7 @@ ShallowWrapper {
                 "bsClass": "btn",
                 "bsStyle": "default",
                 "children": "Submit",
+                "className": "submit-button",
                 "disabled": false,
                 "onClick": [Function],
               },
@@ -281,6 +324,23 @@ ShallowWrapper {
           "ref": null,
           "rendered": Array [],
           "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
+            "block": false,
+            "bsClass": "btn",
+            "bsStyle": "default",
+            "children": "Clear Notes",
+            "className": "clear-notes",
+            "disabled": false,
+          },
+          "ref": null,
+          "rendered": "Clear Notes",
+          "type": [Function],
         },
       ],
       "type": "div",

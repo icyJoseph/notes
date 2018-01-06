@@ -42,13 +42,16 @@ class App extends Component {
             value={this.state.text}
             onChange={e => this.setState({ text: e.target.value })}
           />
-          <Button onClick={() => this.submit()}>Submit</Button>
+          <Button className="submit-button" onClick={() => this.submit()}>
+            Submit
+          </Button>
         </Form>
         <ul className="notes-list">
           {notes.map((note, i) => (
             <Note key={i} className="note" note={note} />
           ))}
         </ul>
+        <Button className="clear-notes">Clear Notes</Button>
       </div>
     );
   }
