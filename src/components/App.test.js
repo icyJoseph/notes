@@ -75,8 +75,11 @@ describe("App", () => {
         });
       });
 
-      describe("and saves notes to cookies", () => {
-        it("readCookie method returns the note", () => {
+      describe("and component updates", () => {
+        beforeEach(() => {
+          app.instance().componentDidUpdate();
+        });
+        it("After update, the cookie is saved and can be read", () => {
           expect(app.instance().readCookie()).toEqual([note]);
         });
       });
