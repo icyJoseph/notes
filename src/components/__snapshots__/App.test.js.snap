@@ -33,6 +33,7 @@ ShallowWrapper {
                     bsClass="form-control"
                     componentClass="input"
                     onChange={[Function]}
+                    value=""
           />
           <Button
                     active={false}
@@ -71,6 +72,7 @@ ShallowWrapper {
               bsClass="form-control"
               componentClass="input"
               onChange={[Function]}
+              value=""
 />,
             <Button
               active={false}
@@ -96,6 +98,7 @@ ShallowWrapper {
               "bsClass": "form-control",
               "componentClass": "input",
               "onChange": [Function],
+              "value": "",
             },
             "ref": null,
             "rendered": null,
@@ -145,6 +148,7 @@ ShallowWrapper {
                         bsClass="form-control"
                         componentClass="input"
                         onChange={[Function]}
+                        value=""
             />
             <Button
                         active={false}
@@ -183,6 +187,7 @@ ShallowWrapper {
                 bsClass="form-control"
                 componentClass="input"
                 onChange={[Function]}
+                value=""
 />,
               <Button
                 active={false}
@@ -208,6 +213,7 @@ ShallowWrapper {
                 "bsClass": "form-control",
                 "componentClass": "input",
                 "onChange": [Function],
+                "value": "",
               },
               "ref": null,
               "rendered": null,

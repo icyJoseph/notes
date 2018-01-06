@@ -9,6 +9,7 @@ class App extends Component {
         <h2 className="title">My Notes</h2>
         <Form>
           <FormControl
+            value={this.state.text}
             onChange={e => this.setState({ text: e.target.value })}
           />
           <Button>Submit</Button>
