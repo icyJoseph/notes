@@ -106,4 +106,14 @@ describe("App", () => {
       expect(app2.state().notes).toEqual([note]);
     });
   });
+
+  it("renders a boostrap button with class `.clear-notes` and Clear Notes text", () => {
+    expect(app.find(".clear-notes").exists()).toBe(true);
+    expect(
+      app
+        .find(".clear-note")
+        .render()
+        .text()
+    ).toEqual("Clear Notes");
+  });
 });
