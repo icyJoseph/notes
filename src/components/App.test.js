@@ -92,4 +92,15 @@ describe("App", () => {
       });
     });
   });
+
+  describe("After componentDidMount, App fetches cookies", () => {
+    let app2 = mount(<App />);
+
+    beforeEach(() => {
+      app2.instance().componentDidMount();
+    });
+    it("reads cookies upon mounting", () => {
+      expect(app2.state().notes).toEqual([note]);
+    });
+  });
 });
