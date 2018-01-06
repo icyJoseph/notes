@@ -17,10 +17,107 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "My Notes",
+      "children": Array [
+        <h2
+          className="title"
+>
+          My Notes
+</h2>,
+        <Form
+          bsClass="form"
+          componentClass="form"
+          horizontal={false}
+          inline={false}
+>
+          <FormControl
+                    bsClass="form-control"
+                    componentClass="input"
+          />
+          <Button
+                    active={false}
+                    block={false}
+                    bsClass="btn"
+                    bsStyle="default"
+                    disabled={false}
+          >
+                    Submit
+          </Button>
+</Form>,
+      ],
     },
     "ref": null,
-    "rendered": "My Notes",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "My Notes",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "My Notes",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "bsClass": "form",
+          "children": Array [
+            <FormControl
+              bsClass="form-control"
+              componentClass="input"
+/>,
+            <Button
+              active={false}
+              block={false}
+              bsClass="btn"
+              bsStyle="default"
+              disabled={false}
+>
+              Submit
+</Button>,
+          ],
+          "componentClass": "form",
+          "horizontal": false,
+          "inline": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "form-control",
+              "componentClass": "input",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "block": false,
+              "bsClass": "btn",
+              "bsStyle": "default",
+              "children": "Submit",
+              "disabled": false,
+            },
+            "ref": null,
+            "rendered": "Submit",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +126,107 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "My Notes",
+        "children": Array [
+          <h2
+            className="title"
+>
+            My Notes
+</h2>,
+          <Form
+            bsClass="form"
+            componentClass="form"
+            horizontal={false}
+            inline={false}
+>
+            <FormControl
+                        bsClass="form-control"
+                        componentClass="input"
+            />
+            <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="default"
+                        disabled={false}
+            >
+                        Submit
+            </Button>
+</Form>,
+        ],
       },
       "ref": null,
-      "rendered": "My Notes",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "My Notes",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "My Notes",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bsClass": "form",
+            "children": Array [
+              <FormControl
+                bsClass="form-control"
+                componentClass="input"
+/>,
+              <Button
+                active={false}
+                block={false}
+                bsClass="btn"
+                bsStyle="default"
+                disabled={false}
+>
+                Submit
+</Button>,
+            ],
+            "componentClass": "form",
+            "horizontal": false,
+            "inline": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-control",
+                "componentClass": "input",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "active": false,
+                "block": false,
+                "bsClass": "btn",
+                "bsStyle": "default",
+                "children": "Submit",
+                "disabled": false,
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
