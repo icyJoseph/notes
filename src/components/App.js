@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button, FormControl } from "react-bootstrap";
+import Note from "./Note";
 
 class App extends Component {
   state = {
@@ -28,9 +29,7 @@ class App extends Component {
         </Form>
         <ul className="notes-list">
           {notes.map((note, i) => (
-            <li key={i} className="note">
-              {note}
-            </li>
+            <Note key={i} className="note" note={note} />
           ))}
         </ul>
       </div>
