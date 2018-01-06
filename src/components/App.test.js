@@ -1,10 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { mount, shallow } from "enzyme";
 
 import App from "./App";
 
 describe("App", () => {
-  const app = shallow(<App />);
+  let app = shallow(<App />);
   it("renders correctly", () => {
     expect(app).toMatchSnapshot();
   });
@@ -43,7 +43,7 @@ describe("App", () => {
   });
 
   describe("App state", () => {
-    let initialAppState = { text: "", notes: [] };
+    let initialAppState = { text: "", notes: [], key: "MYNOTES:COOKIE:KEY" };
     let note = "Testing FormControl input";
 
     it("has a state object", () => {
@@ -73,7 +73,6 @@ describe("App", () => {
         it("adds note to `state.notes`", () => {
           expect(app.state().notes).toEqual([note]);
         });
-      });
 
       describe("and app renders a list of notes", () => {
         it("contains a list", () => {
