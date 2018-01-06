@@ -18,13 +18,20 @@ class App extends Component {
     return (
       <div>
         <h2 className="title">My Notes</h2>
-        <Form>
+        <Form onSubmit={e => e.preventDefault()}>
           <FormControl
             value={this.state.text}
             onChange={e => this.setState({ text: e.target.value })}
           />
           <Button onClick={() => this.submit()}>Submit</Button>
         </Form>
+        <ul className="notes-list">
+          {this.state.notes.map((note, i) => (
+            <li key={i} className="note">
+              {note}
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

@@ -28,6 +28,7 @@ ShallowWrapper {
           componentClass="form"
           horizontal={false}
           inline={false}
+          onSubmit={[Function]}
 >
           <FormControl
                     bsClass="form-control"
@@ -46,6 +47,11 @@ ShallowWrapper {
                     Submit
           </Button>
 </Form>,
+        <ul
+          className="notes-list"
+>
+          
+</ul>,
       ],
     },
     "ref": null,
@@ -89,6 +95,7 @@ ShallowWrapper {
           "componentClass": "form",
           "horizontal": false,
           "inline": false,
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -126,6 +133,18 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "notes-list",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "ul",
+      },
     ],
     "type": "div",
   },
@@ -146,6 +165,7 @@ ShallowWrapper {
             componentClass="form"
             horizontal={false}
             inline={false}
+            onSubmit={[Function]}
 >
             <FormControl
                         bsClass="form-control"
@@ -164,6 +184,11 @@ ShallowWrapper {
                         Submit
             </Button>
 </Form>,
+          <ul
+            className="notes-list"
+>
+            
+</ul>,
         ],
       },
       "ref": null,
@@ -207,6 +232,7 @@ ShallowWrapper {
             "componentClass": "form",
             "horizontal": false,
             "inline": false,
+            "onSubmit": [Function],
           },
           "ref": null,
           "rendered": Array [
@@ -243,6 +269,18 @@ ShallowWrapper {
             },
           ],
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "notes-list",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "ul",
         },
       ],
       "type": "div",
